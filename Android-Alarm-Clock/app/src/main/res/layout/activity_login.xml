@@ -3,11 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#01b0f1"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="za.co.neilson.alarm.login.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loginlogo"
+        android:id="@+id/imageView"
+        android:layout_marginTop = "5dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        />
 
     <EditText
         android:layout_width="match_parent"
@@ -15,22 +26,20 @@
         android:id="@+id/idEditText"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="230dp"
         android:hint="ID"
         android:editable="true" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sign In"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:background="@drawable/signin"
         android:id="@+id/signInButton"
         android:enabled="true"
-        android:layout_marginLeft="73dp"
-        android:layout_marginStart="73dp"
+        style="@style/Theme.Base.Light"
         android:layout_marginTop="51dp"
         android:layout_below="@+id/pwEditText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_marginLeft="62dp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -42,9 +51,9 @@
         android:hint="PW" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sign Up"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:background="@drawable/signup"
         android:id="@+id/signUpButton"
         android:layout_alignBottom="@+id/signInButton"
         android:layout_toRightOf="@+id/signInButton"
@@ -52,4 +61,6 @@
         android:layout_marginLeft="29dp"
         android:layout_marginStart="29dp"
         android:enabled="true" />
+
+
 </RelativeLayout>
