@@ -1,20 +1,11 @@
 package za.co.neilson.alarm.alert;
 
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.PendingIntent;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.SystemClock;
 import android.os.Vibrator;
 import android.util.Log;
-import android.view.HapticFeedbackConstants;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ListView;
-import android.widget.Toast;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -29,7 +20,6 @@ import java.util.TimerTask;
 import za.co.neilson.alarm.Alarm;
 import za.co.neilson.alarm.R;
 import za.co.neilson.alarm.database.Database;
-import za.co.neilson.alarm.group.User;
 import za.co.neilson.alarm.login.ServerRequest;
 
 /**
@@ -40,6 +30,7 @@ public class WaitActivity extends Activity {
     private String email;
     List<NameValuePair> params;
     private boolean everyoneSuccess;
+    boolean switchMe = false;
 
     Vibrator vibrator;
 
